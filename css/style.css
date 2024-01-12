@@ -1,53 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-*{ box-sizing:border-box;}
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Nanum+Gothic:wght@400;700;800&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{box-sizing: border-box;}
 body{
     margin:0;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size:16px;
+    font-family: 'La Belle Aurore', cursive;
+font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
     color:#333;
 }
 .unna{
-    font-family: 'Unna', serif;
+    font-family:'Unna', serif;
 }
 .aurore{
     font-family: 'La Belle Aurore', cursive;
 }
+
+
 .hero{
     width:100%;
-    height:700px;
-    background:url('../images/main.jpg') no-repeat center;
+    height:600px;
+    background:url('../img/jonathan-borba-mDR8ji1pMKg-unsplash.jpg') no-repeat center;
     background-size:cover;
 }
 .text-center{
-    text-align:center;
+    text-align: center;
+
 }
+
+
+/*뒤에까지 계속 써먹는 것들*/
 .container{
     width:1200px;
-    margin-left:auto;
+    margin-left:auto;   
     margin-right:auto;
 }
 .row{
-    margin-left:-15px;
-    margin-right:-15px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 .clearfix::after,
-.row::after{
+.row::after{  /***가상의 공간을 만드는 것 ***/
     content:"";
-    display:table;
+    display: table;
     clear:both;
 }
+/*뒤에까지 계속 써먹는 것들*/
 
-.container>div{
+
+.hero .container>div{
     margin-top:30px;
     border:1px solid #fff;
 }
-.container>.hero-left{
+.hero .container>.hero-left{
    float:left; 
    width:40%;
    height:125px;
    border-right:none;
 }
-.container>.hero-logo{
+.hero .container>.hero-logo{
    float:left;
    width:20%;
    height:125px;
@@ -55,7 +64,7 @@ body{
    text-align:center;
    color:#fff;
 }
-.hero-logo h1{
+.hero .hero-logo h1{
     margin:0;
     padding-top:20px;
     font-family: 'La Belle Aurore', cursive;
@@ -65,36 +74,36 @@ body{
     font-size:12px;
     margin:0;
     padding-top:8px;
-    letter-spacing:1px;
+    letter-spacing: 1px;
 }
-.container>.hero-right{
+.hero .container>.hero-right{
   float:left;  
   width:40%;
   height:125px;
   border-left:none;
 }
 
-/******* navigation **********/
+/********* navigation********/
 nav.container{
     padding-top:30px;
-    text-align:center;
+    text-align: center;
 }
 nav.container a{
     color:#fff;
     font-family: 'Unna', serif;
     font-weight: 700;
-    font-size:14px;
-    letter-spacing:4px;
+    font-size: 14px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     margin-left:40px;
-    margin-right:40px;
-    text-decoration:none;
+    margin-right: 40px;
+    text-decoration: none;
 }
 .title{
     font-family: 'Unna', serif;
-    font-weight: 700; 
-    color:#fff;
-    text-align:center;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
     font-size: 75px;
     margin-top:270px;
 }
@@ -102,20 +111,20 @@ nav.container a{
     width:300px;
 }
 .container>.flbox{
-    background:url(../images/flow2.png) no-repeat center;
+    background: url(../img/images.jpg) no-repeat center;
     background-size:cover;
     width:230px;
     height:120px;
     margin:100px auto 20px;
 }
 h2.subtitle{
-    font-size:36px;
-    padding-bottom:40px;
+    font-size: 36px;
+    padding-bottom: 40px;
 }
 .col{
-    width:33.333333334%;
-    padding-left:15px;
-    padding-right:15px;
+    width:33.333333%;
+    padding-left: 15px;
+    padding-right: 15px;
     float:left;
 }
 .col>div{
@@ -124,18 +133,18 @@ h2.subtitle{
 .box1{
     height:385px;
     overflow: hidden;
-    position:relative;
+    position: relative;
     cursor:pointer;
 }
 .box2{
-    height:577px;
-    overflow: hidden;
-    position:relative;
+    height: 577px;
+    overflow:hidden;
+    position: relative;
     cursor:pointer;
 }
-
 .col img{
     height:100%;
+    width:100%;
 }
 .text-box{
    position:absolute;
@@ -162,27 +171,172 @@ h2.subtitle{
 .box1:hover>.text-box{
     display:block;
 }
+
+
+
+
+
+
+
+
+/*******************************************/
 .btn{
     display:block;
     width:280px;
     height:50px;
-    text-align:center;
+    text-align: center;
     text-transform: uppercase;
-    color:white;
-    background:rgb(138,207,154);
+    color:#ffff;
+    background-color:rgb(138,207,154);
     border-radius:5px;
     font-size:14px;
-    font-weight:700;
-    letter-spacing:3px;
-    line-height:50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 50px;
     margin:30px auto 100px;
     cursor:pointer;
-    text-decoration:none;
+    text-decoration: none;
 }
 .btn:hover{
-    background:rgb(109, 172, 124);
+    background:rgb(109, 172, 124)
+
+}
+/*** section whoami****/
+section.whoami{
+    background-color: rgb(237, 242, 239);
+    padding-top:40px;
+    padding-bottom:50px;
+}
+.leftbox{
+    width:60%;
+    float:left;
+    position: relative;
+}
+.leftbox img{
+    position:absolute;
+}
+img.aboutme{
+   
+    top:25px;
+}
+img.aboutme2{
+    top: 280px;
+    right:110px;
+    border:20px solid rgb(237,242, 239);
+    z-index:2;
+}
+.rightbox{
+    float:right;
+    width:40%;
+}
+.rightbox h1{
+    font-size: 36px;
+    line-height: 1.5;
+}
+.rightbox p{
+    line-height: 1.6;
+    font-weight:700;
+}
+.whoami .btn{
+    margin-left:0;
+    width:200px;
+    height:50px;
 }
 
-/*
-rgb(237, 242, 239)
-*/
+
+.package-box{
+    width:100%;
+    position:relative;
+}
+.package-box::after{
+    content: "";
+    display:block;
+    padding-bottom:100%;
+}
+
+.inner{
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.inner img{
+    width:100%;
+    height:auto;
+}
+.packages h1{
+    letter-spacing:1px;
+    font-size: 30px;
+}
+.packages p{
+    letter-spacing:0px;
+    font-size: 20px;
+}
+.packages .btn{
+   width:450px;
+
+}
+
+
+
+.hero2{
+    width:100%;
+    height:400px;
+    background:url(../img/banner_2.webp)no-repeat center;
+    background-size:cover;
+}
+.hero2 .title2{
+    font-family: 'Unna', serif;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    padding-top:290px;
+}
+
+.last{
+  position: relative;
+}
+
+.last .leftbox{
+   margin-top:150px;
+   width:65%;
+   height:600px;
+ 
+}
+.last .leftbox .propose{
+    width:800px;
+    height:450px;
+}
+
+.last .rightbox{
+    background-color:  rgb(237,242, 239);
+    margin-top: 280px;
+    margin-left: 700px;
+    width:570px;
+    height:300px;
+    position:absolute;
+    z-index: 3;
+}
+.last .rightbox p{
+    font-size: 18px;
+    margin-left:30px;
+    margin-top:60px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-weight:300;
+}
+.last .rightbox h3{
+    margin-bottom:100px;
+    margin-left:430px;
+    font-size:25px;
+    font-weight: 300;
+}
+.last .ho{
+    margin-top:253px;
+    margin-left:950px;
+    position:absolute;
+    z-index: 10;
+    width:50px;
+    height: 50px;
+}
