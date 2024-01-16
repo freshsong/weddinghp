@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap');
+
+body{
+    font-family: 'Grandiflora One', cursive;
+    background-color: #333;
+}
+.container{
+    width:600px;
+    height:600px;
+    border-radius:50%;
+    border:1px solid #fff;
+    background:#333;
+    margin:50px auto;
+    position:relative;
+}
+    
+.box{
+    width:20px;
+    height:20px;
+    border:1px solid #fff;
+    border-radius:50%;
+    background-color: #000000;
+    position:absolute;
+    left: calc(50% - 10px);
+    top:50%;
+    transform:translateY(-50%);
+}
+.number{
+    color:#fff;
+    font-size:40px;
+    position:absolute;
+    z-index: 1;
+}
+#number12{
+    right:0;
+    left:0;
+    top:0;
+    text-align: center;
+   
+}
+#number6{
+    right:0;
+    left:0;
+    bottom:0;
+    text-align:center;
+}
+#number9{
+    left:15px;
+    top:50%;
+    transform:translateY(-8%);
+    bottom:0;
+    text-align:center;
+}
+#number3{
+    right:15px;
+    top:50%;
+    transform:translateY(-8%);
+    bottom:0;
+    text-align:center;
+}
+#number1{
+    top:calc(300px - 260px);
+    right:calc(300px - 150px);
+}
+#number2{
+    top:calc(300px - 160px);
+    right:calc(300px - 245px);
+}
+#number5{
+    bottom:calc(300px - 260px);
+    right:calc(300px - 150px);
+}
+#number4{
+    bottom:calc(300px - 160px);
+    right:calc(300px - 245px);
+}
+#number11{
+    top:calc(300px - 260px);
+    left:calc(300px - 150px);
+}
+#number10{
+    top:calc(300px - 160px);
+    left:calc(300px - 245px);
+}
+#number7{
+    bottom:calc(300px - 260px);
+    left:calc(300px - 150px);
+}
+#number8{
+    bottom:calc(300px - 160px);
+    left:calc(300px - 245px);
+}
+#sc{
+    color:red;
+    background-color: red;
+    width:2px;
+    height:200px;
+    border: 1px solid red;
+    position:absolute;
+    left: calc(50% - 1px);
+    top: 50%;
+    transform:translateY(-100%);
+    border-radius:90%;
+
+}
+#mn{
+    color:#fff;
+    background-color: #fff;
+    width:5px;
+    height:170px;
+    border: 1px solid #fff;
+    position:absolute;
+    left: calc(50% - 2.5px);
+    top: 50%;
+    transform:translateY(-100%);
+    border-radius:90%;
+
+}
+#hr{
+    color:#000000;
+    background-color: #000000;
+    width:8px;
+    height:120px;
+    border: 1px solid #000000;
+    position:absolute;
+    left: calc(50% - 4px);
+    top: 50%;
+    transform:translateY(-100%);
+    border-radius:90%;
+
+}
+#logo{
+   position:absolute;
+   width:200px;
+   height:200px;
+   left: calc(50% - 100px);
+   top: 70px;
+   
+}
